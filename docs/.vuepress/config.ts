@@ -9,8 +9,18 @@ export default defineUserConfig({
         logo: '/images/logo.png',
         sidebar: [
             {
+                text: '目录',
+                link: '/'
+            },
+            {
                 text: '计算机网络',
-                link: '/',
+                link: '/network/generate',
+                children: [
+                    {
+                        text: '网络模型',
+                        link: '/network/network-model'
+                    }
+                ]
             },
             {
                 text: '浏览器工作原理',

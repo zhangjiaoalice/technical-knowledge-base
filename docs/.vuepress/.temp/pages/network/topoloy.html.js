@@ -1,4 +1,4 @@
-export const data = JSON.parse("{\"key\":\"v-630a61b7\",\"path\":\"/network/topoloy.html\",\"title\":\"网络拓扑结构\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[],\"git\":{\"updatedTime\":null,\"contributors\":[]},\"filePathRelative\":\"network/topoloy.md\"}")
+export const data = JSON.parse("{\"key\":\"v-630a61b7\",\"path\":\"/network/topoloy.html\",\"title\":\"网络拓扑结构\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[],\"git\":{\"updatedTime\":1704882295000,\"contributors\":[{\"name\":\"zhangjiaoalice\",\"email\":\"2640847812@qq.com\",\"commits\":1}]},\"filePathRelative\":\"network/topoloy.md\"}")
 
 if (import.meta.webpackHot) {
   import.meta.webpackHot.accept()

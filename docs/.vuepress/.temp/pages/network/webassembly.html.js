@@ -1,4 +1,4 @@
-export const data = JSON.parse("{\"key\":\"v-51a3bcce\",\"path\":\"/network/webassembly.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[],\"git\":{\"updatedTime\":null,\"contributors\":[]},\"filePathRelative\":\"network/webassembly.md\"}")
+export const data = JSON.parse("{\"key\":\"v-51a3bcce\",\"path\":\"/network/webassembly.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[],\"git\":{\"updatedTime\":1704882295000,\"contributors\":[{\"name\":\"zhangjiaoalice\",\"email\":\"2640847812@qq.com\",\"commits\":1}]},\"filePathRelative\":\"network/webassembly.md\"}")
 
 if (import.meta.webpackHot) {
   import.meta.webpackHot.accept()

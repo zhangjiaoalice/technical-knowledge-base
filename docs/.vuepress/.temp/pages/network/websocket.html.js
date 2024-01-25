@@ -1,4 +1,4 @@
-export const data = JSON.parse("{\"key\":\"v-a08a9ca8\",\"path\":\"/network/websocket.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[],\"git\":{\"updatedTime\":null,\"contributors\":[]},\"filePathRelative\":\"network/websocket.md\"}")
+export const data = JSON.parse("{\"key\":\"v-a08a9ca8\",\"path\":\"/network/websocket.html\",\"title\":\"Websocket\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[],\"git\":{\"updatedTime\":1706164258000,\"contributors\":[{\"name\":\"zhangjiaoalice\",\"email\":\"2640847812@qq.com\",\"commits\":2}]},\"filePathRelative\":\"network/websocket.md\"}")
 
 if (import.meta.webpackHot) {
   import.meta.webpackHot.accept()
