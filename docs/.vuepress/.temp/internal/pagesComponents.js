@@ -5,6 +5,8 @@ export const pagesComponents = {
   "v-8daa1a0e": defineAsyncComponent(() => import(/* webpackChunkName: "v-8daa1a0e" */"/Users/alice/Desktop/框架源码学习/technical-knowledge-base/docs/.vuepress/.temp/pages/index.html.vue")),
   // path: /miniprogrammer/
   "v-c1ef056e": defineAsyncComponent(() => import(/* webpackChunkName: "v-c1ef056e" */"/Users/alice/Desktop/框架源码学习/technical-knowledge-base/docs/.vuepress/.temp/pages/miniprogrammer/index.html.vue")),
+  // path: /miniprogrammer/knowledge.html
+  "v-0512feb8": defineAsyncComponent(() => import(/* webpackChunkName: "v-0512feb8" */"/Users/alice/Desktop/框架源码学习/technical-knowledge-base/docs/.vuepress/.temp/pages/miniprogrammer/knowledge.html.vue")),
   // path: /network/band-widh.html
   "v-da9dcb36": defineAsyncComponent(() => import(/* webpackChunkName: "v-da9dcb36" */"/Users/alice/Desktop/框架源码学习/technical-knowledge-base/docs/.vuepress/.temp/pages/network/band-widh.html.vue")),
   // path: /network/cache.html
@@ -37,10 +39,12 @@ export const pagesComponents = {
   "v-51a3bcce": defineAsyncComponent(() => import(/* webpackChunkName: "v-51a3bcce" */"/Users/alice/Desktop/框架源码学习/technical-knowledge-base/docs/.vuepress/.temp/pages/network/webassembly.html.vue")),
   // path: /network/websocket.html
   "v-a08a9ca8": defineAsyncComponent(() => import(/* webpackChunkName: "v-a08a9ca8" */"/Users/alice/Desktop/框架源码学习/technical-knowledge-base/docs/.vuepress/.temp/pages/network/websocket.html.vue")),
-  // path: /tools/lerna.html
-  "v-31b5e70c": defineAsyncComponent(() => import(/* webpackChunkName: "v-31b5e70c" */"/Users/alice/Desktop/框架源码学习/technical-knowledge-base/docs/.vuepress/.temp/pages/tools/lerna.html.vue")),
   // path: /uni-app/
   "v-7d56b238": defineAsyncComponent(() => import(/* webpackChunkName: "v-7d56b238" */"/Users/alice/Desktop/框架源码学习/technical-knowledge-base/docs/.vuepress/.temp/pages/uni-app/index.html.vue")),
+  // path: /tools/lerna.html
+  "v-31b5e70c": defineAsyncComponent(() => import(/* webpackChunkName: "v-31b5e70c" */"/Users/alice/Desktop/框架源码学习/technical-knowledge-base/docs/.vuepress/.temp/pages/tools/lerna.html.vue")),
   // path: /404.html
   "v-3706649a": defineAsyncComponent(() => import(/* webpackChunkName: "v-3706649a" */"/Users/alice/Desktop/框架源码学习/technical-knowledge-base/docs/.vuepress/.temp/pages/404.html.vue")),
+  // path: /miniprogrammer/performance.html
+  "v-45b0cc1c": defineAsyncComponent(() => import(/* webpackChunkName: "v-45b0cc1c" */"/Users/alice/Desktop/框架源码学习/technical-knowledge-base/docs/.vuepress/.temp/pages/miniprogrammer/performance.html.vue")),
 }

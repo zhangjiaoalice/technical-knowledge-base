@@ -19,6 +19,10 @@ export default defineUserConfig({
                     {
                         text: '网络模型',
                         link: '/network/network-model'
+                    },
+                    {
+                        text: '网络传输速率和带宽',
+                        link: '/network/band-widh',
                     }
                 ]
             },
@@ -73,6 +77,16 @@ export default defineUserConfig({
             {
                 text: '微信小程序',
                 link: '/miniprogrammer',
+                children: [
+                    {
+                        text: '应该掌握的知识点',
+                        link: '/miniprogrammer/knowledge'
+                    },
+                    {
+                        text: '微信小程序性能优化',
+                        link: '/miniprogrammer/performance'
+                    }
+                ]
             },
             {
                 text: 'uni-app',
