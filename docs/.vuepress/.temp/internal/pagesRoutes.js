@@ -1,6 +1,6 @@
 export const pagesRoutes = [
   ["v-8daa1a0e","/",{"title":"目录"},["/README.md"]],
-  ["v-31b5e70c","/tools/lerna.html",{"title":"Lerna 简介"},[":md"]],
+  ["v-c1ef056e","/miniprogrammer/",{"title":"微信小程序"},["/miniprogrammer/index.md"]],
   ["v-da9dcb36","/network/band-widh.html",{"title":"网络传输速率和带宽"},[":md"]],
   ["v-d74b305e","/network/cache.html",{"title":"前端缓存策略"},[":md"]],
   ["v-51785086","/network/cdn.html",{"title":"CDN"},[":md"]],
@@ -17,7 +17,7 @@ export const pagesRoutes = [
   ["v-65c3202b","/network/web-rtc.html",{"title":"WebRTC"},[":md"]],
   ["v-51a3bcce","/network/webassembly.html",{"title":""},[":md"]],
   ["v-a08a9ca8","/network/websocket.html",{"title":"Websocket"},[":md"]],
-  ["v-3706649a","/404.html",{"title":""},[]],
+  ["v-31b5e70c","/tools/lerna.html",{"title":"Lerna 简介"},[":md"]],
   ["v-7d56b238","/uni-app/",{"title":"uni-app"},["/uni-app/index.md"]],
-  ["v-c1ef056e","/miniprogrammer/",{"title":"微信小程序"},["/miniprogrammer/index.md"]],
+  ["v-3706649a","/404.html",{"title":""},[]],
 ]
