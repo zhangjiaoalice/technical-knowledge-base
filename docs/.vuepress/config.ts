@@ -23,6 +23,10 @@ export default defineUserConfig({
                     {
                         text: '网络传输速率和带宽',
                         link: '/network/band-widh',
+                    },
+                    {
+                        text: 'CDN',
+                        link: '/network/cdn'
                     }
                 ]
             },
