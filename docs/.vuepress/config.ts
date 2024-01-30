@@ -25,6 +25,10 @@ export default defineUserConfig({
                         link: '/network/band-widh',
                     },
                     {
+                        text: '网络通信',
+                        link: '/network/communcation'
+                    },
+                    {
                         text: 'CDN',
                         link: '/network/cdn'
                     }
