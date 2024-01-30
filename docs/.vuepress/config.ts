@@ -31,6 +31,10 @@ export default defineUserConfig({
                     {
                         text: 'CDN',
                         link: '/network/cdn'
+                    },
+                    {
+                        text: 'DNS',
+                        link: '/network/dns',
                     }
                 ]
             },
