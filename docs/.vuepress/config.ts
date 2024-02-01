@@ -60,7 +60,17 @@ export default defineUserConfig({
             },
             {
                 text: 'javascript',
-                link: '/js',
+                link: '/js/js-basic',
+                children: [
+                    {
+                        text: 'DOM',
+                        link: '/js/dom',
+                    },
+                    {
+                        text: 'BOM',
+                        link: '/js/bom'
+                    }
+                ]
             },
             {
                 text: 'Nodejs',
