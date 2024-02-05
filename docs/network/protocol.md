@@ -173,8 +173,35 @@ HTTP 是 `超文本传输协议`， 用于在web浏览器和服务器之间传�
 
 #### 3.1.4 HTTP 头部
 * <font color=red>General Header 通用头</font>
-    - 
+    - `Cache-Control`: 用于控制缓存策略
+    - `Connection`: 指定转发时需要去掉的内容; 管理持久连接（http/1.1 默认时持久连接的），当服务器端想明确断开连接的话，指定 Connection 头部字段为 Close
+    - `Upgrade`: 用于检测HTTP协议以及其他协议是否使用更高版本进行通信，其参数值可以用来指定一个完全不同的通信协议 
+    - `via`: 代理服务器相关信息,报文经过代理或者网关时，会现在 via 头部字段中附加该服务器的信息，然后再进行转发
+    - `Warning`: 错误和警告通知
+    - `Transfor-Encoding`: 报文主题的传输编码格式（HTTP/1.1 中该字段仅对分块时候的传输编码有效）
+    - `Trailer`: 会事先说明在报文主体后记录了哪些字段，常用于啊 HTTP/1.1 分块传输编码中国
+    - `Pragma`: 是 HTTP/1.1 之前版本的遗留字段，仅作为与HTTP/1.0向后兼容而定义的
+    - `Date`: 创建 HTTP 报文的时间
+
 * <font color=red>Request Header 请求头</font>
+    - `Accept`: 用户可处理的媒体类型，可以一次指定多个
+    - `Accept-Charset`: 告诉服务端，客户端想要什么字符集
+    - `Accept-Encoding`:  报文压缩策略（gzip、deflate）
+    - `Accept-Language`: 需要语言类型
+    - `Authorization`: 携带的web 认证信息
+    - `Expect`: 期待服务器的特定行为
+    - `From`: 用户邮箱地址
+    - `Host`: 请求资源所在服务器
+    - `If-Match`: 附带条件的请求，使用附带条件和实体标记(ETag) 进行对比，相等返回200， 否则返回412 （Precondition Fail）
+    - `If-Modifiled-Since`: 比较资源更新时间，资源更新时间大于该附带条件时候正常返回则返回304
+    - `If-None-Match`: 比较实体标记
+    - `If-Range`: 资源未更新时，针对资源的范围进行请求
+    - `If-Unmodified-Since`: 比较资源更新时间
+    - `Max-Forwards`: 服务器在往下一个服务器转发请求之前，Max-Forwards 的 值减 1 ,当服务器接收到 Max-Forwards 值为 0 的请求 时，则不再进行转发，而是直接返回响应
+    - `Range`: 范围请求 （断点续传时候使用到了）接收到附带 Range 头部字段请求的服务器，会在处理请求之后返回状 态码为 206 Partial Content 的响应。无法处理该范围请求时，则会返 回状态码 200 OK 的响应及全部资源
+    - `Referer`: 告知服务器请求原始资源的URI
+    - `TE`: 告诉服务器客户端能处理响应的传输编码方式以及相对优先级
+    - `User-Agent`: 会创建请求的浏览器和用户代理名称等信息传递给服务器。网络爬虫发起请求时，有可能在字段内添加爬虫作者的电子邮件地址。此外如果请求经过代理，那么中间也很可能被添加上代理
 * <font color=red>Response Header 响应头</font>
 * <font color=red>Entity Header 实体头</font>
 
