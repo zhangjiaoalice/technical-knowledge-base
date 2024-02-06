@@ -43,6 +43,10 @@ export default defineUserConfig({
                     {
                         text: 'DNS',
                         link: '/network/dns',
+                    },
+                    {
+                        text: 'WebRTC',
+                        link: '/network/web-rtc'
                     }
                 ]
             },
