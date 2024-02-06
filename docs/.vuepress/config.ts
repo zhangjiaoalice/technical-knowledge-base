@@ -33,6 +33,10 @@ export default defineUserConfig({
                         link: '/network/protocol'
                     },
                     {
+                        text: '网络状态检测',
+                        link: '/network/detection'
+                    },
+                    {
                         text: 'CDN',
                         link: '/network/cdn'
                     },
