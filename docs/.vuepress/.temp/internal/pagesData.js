@@ -1,14 +1,22 @@
 export const pagesData = {
   // path: /
   "v-8daa1a0e": () => import(/* webpackChunkName: "v-8daa1a0e" */"/Users/alice/Desktop/框架源码学习/technical-knowledge-base/docs/.vuepress/.temp/pages/index.html.js").then(({ data }) => data),
+  // path: /js/bom.html
+  "v-3fb43886": () => import(/* webpackChunkName: "v-3fb43886" */"/Users/alice/Desktop/框架源码学习/technical-knowledge-base/docs/.vuepress/.temp/pages/js/bom.html.js").then(({ data }) => data),
+  // path: /js/dom.html
+  "v-0f769244": () => import(/* webpackChunkName: "v-0f769244" */"/Users/alice/Desktop/框架源码学习/technical-knowledge-base/docs/.vuepress/.temp/pages/js/dom.html.js").then(({ data }) => data),
+  // path: /js/js-basic.html
+  "v-f10c81bc": () => import(/* webpackChunkName: "v-f10c81bc" */"/Users/alice/Desktop/框架源码学习/technical-knowledge-base/docs/.vuepress/.temp/pages/js/js-basic.html.js").then(({ data }) => data),
   // path: /miniprogrammer/
   "v-c1ef056e": () => import(/* webpackChunkName: "v-c1ef056e" */"/Users/alice/Desktop/框架源码学习/technical-knowledge-base/docs/.vuepress/.temp/pages/miniprogrammer/index.html.js").then(({ data }) => data),
   // path: /miniprogrammer/knowledge.html
   "v-0512feb8": () => import(/* webpackChunkName: "v-0512feb8" */"/Users/alice/Desktop/框架源码学习/technical-knowledge-base/docs/.vuepress/.temp/pages/miniprogrammer/knowledge.html.js").then(({ data }) => data),
+  // path: /miniprogrammer/performance.html
+  "v-45b0cc1c": () => import(/* webpackChunkName: "v-45b0cc1c" */"/Users/alice/Desktop/框架源码学习/technical-knowledge-base/docs/.vuepress/.temp/pages/miniprogrammer/performance.html.js").then(({ data }) => data),
+  // path: /tools/lerna.html
+  "v-31b5e70c": () => import(/* webpackChunkName: "v-31b5e70c" */"/Users/alice/Desktop/框架源码学习/technical-knowledge-base/docs/.vuepress/.temp/pages/tools/lerna.html.js").then(({ data }) => data),
   // path: /network/band-widh.html
   "v-da9dcb36": () => import(/* webpackChunkName: "v-da9dcb36" */"/Users/alice/Desktop/框架源码学习/technical-knowledge-base/docs/.vuepress/.temp/pages/network/band-widh.html.js").then(({ data }) => data),
-  // path: /network/cache.html
-  "v-d74b305e": () => import(/* webpackChunkName: "v-d74b305e" */"/Users/alice/Desktop/框架源码学习/technical-knowledge-base/docs/.vuepress/.temp/pages/network/cache.html.js").then(({ data }) => data),
   // path: /network/cdn.html
   "v-51785086": () => import(/* webpackChunkName: "v-51785086" */"/Users/alice/Desktop/框架源码学习/technical-knowledge-base/docs/.vuepress/.temp/pages/network/cdn.html.js").then(({ data }) => data),
   // path: /network/communcation.html
@@ -39,10 +47,6 @@ export const pagesData = {
   "v-a08a9ca8": () => import(/* webpackChunkName: "v-a08a9ca8" */"/Users/alice/Desktop/框架源码学习/technical-knowledge-base/docs/.vuepress/.temp/pages/network/websocket.html.js").then(({ data }) => data),
   // path: /uni-app/
   "v-7d56b238": () => import(/* webpackChunkName: "v-7d56b238" */"/Users/alice/Desktop/框架源码学习/technical-knowledge-base/docs/.vuepress/.temp/pages/uni-app/index.html.js").then(({ data }) => data),
-  // path: /tools/lerna.html
-  "v-31b5e70c": () => import(/* webpackChunkName: "v-31b5e70c" */"/Users/alice/Desktop/框架源码学习/technical-knowledge-base/docs/.vuepress/.temp/pages/tools/lerna.html.js").then(({ data }) => data),
   // path: /404.html
   "v-3706649a": () => import(/* webpackChunkName: "v-3706649a" */"/Users/alice/Desktop/框架源码学习/technical-knowledge-base/docs/.vuepress/.temp/pages/404.html.js").then(({ data }) => data),
-  // path: /miniprogrammer/performance.html
-  "v-45b0cc1c": () => import(/* webpackChunkName: "v-45b0cc1c" */"/Users/alice/Desktop/框架源码学习/technical-knowledge-base/docs/.vuepress/.temp/pages/miniprogrammer/performance.html.js").then(({ data }) => data),
 }

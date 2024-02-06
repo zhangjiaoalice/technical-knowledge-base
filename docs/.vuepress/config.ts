@@ -29,6 +29,10 @@ export default defineUserConfig({
                         link: '/network/communcation'
                     },
                     {
+                        text: '网络协议',
+                        link: '/network/protocol'
+                    },
+                    {
                         text: 'CDN',
                         link: '/network/cdn'
                     },
