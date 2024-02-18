@@ -85,6 +85,10 @@ export default defineUserConfig({
                     {
                         text: '正则表达式',
                         link: '/js/regexp',
+                    },
+                    {
+                        text: '面向对象编程',
+                        link: '/js/object',
                     }
                 ]
             },
