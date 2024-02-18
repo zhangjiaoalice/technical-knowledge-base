@@ -13,8 +13,6 @@ export const pagesData = {
   "v-0512feb8": () => import(/* webpackChunkName: "v-0512feb8" */"/Users/alice/Desktop/框架源码学习/technical-knowledge-base/docs/.vuepress/.temp/pages/miniprogrammer/knowledge.html.js").then(({ data }) => data),
   // path: /miniprogrammer/performance.html
   "v-45b0cc1c": () => import(/* webpackChunkName: "v-45b0cc1c" */"/Users/alice/Desktop/框架源码学习/technical-knowledge-base/docs/.vuepress/.temp/pages/miniprogrammer/performance.html.js").then(({ data }) => data),
-  // path: /tools/lerna.html
-  "v-31b5e70c": () => import(/* webpackChunkName: "v-31b5e70c" */"/Users/alice/Desktop/框架源码学习/technical-knowledge-base/docs/.vuepress/.temp/pages/tools/lerna.html.js").then(({ data }) => data),
   // path: /network/band-widh.html
   "v-da9dcb36": () => import(/* webpackChunkName: "v-da9dcb36" */"/Users/alice/Desktop/框架源码学习/technical-knowledge-base/docs/.vuepress/.temp/pages/network/band-widh.html.js").then(({ data }) => data),
   // path: /network/cdn.html
@@ -45,8 +43,12 @@ export const pagesData = {
   "v-51a3bcce": () => import(/* webpackChunkName: "v-51a3bcce" */"/Users/alice/Desktop/框架源码学习/technical-knowledge-base/docs/.vuepress/.temp/pages/network/webassembly.html.js").then(({ data }) => data),
   // path: /network/websocket.html
   "v-a08a9ca8": () => import(/* webpackChunkName: "v-a08a9ca8" */"/Users/alice/Desktop/框架源码学习/technical-knowledge-base/docs/.vuepress/.temp/pages/network/websocket.html.js").then(({ data }) => data),
+  // path: /tools/lerna.html
+  "v-31b5e70c": () => import(/* webpackChunkName: "v-31b5e70c" */"/Users/alice/Desktop/框架源码学习/technical-knowledge-base/docs/.vuepress/.temp/pages/tools/lerna.html.js").then(({ data }) => data),
   // path: /uni-app/
   "v-7d56b238": () => import(/* webpackChunkName: "v-7d56b238" */"/Users/alice/Desktop/框架源码学习/technical-knowledge-base/docs/.vuepress/.temp/pages/uni-app/index.html.js").then(({ data }) => data),
   // path: /404.html
   "v-3706649a": () => import(/* webpackChunkName: "v-3706649a" */"/Users/alice/Desktop/框架源码学习/technical-knowledge-base/docs/.vuepress/.temp/pages/404.html.js").then(({ data }) => data),
+  // path: /js/regexp.html
+  "v-2cc8f4e3": () => import(/* webpackChunkName: "v-2cc8f4e3" */"/Users/alice/Desktop/框架源码学习/technical-knowledge-base/docs/.vuepress/.temp/pages/js/regexp.html.js").then(({ data }) => data),
 }

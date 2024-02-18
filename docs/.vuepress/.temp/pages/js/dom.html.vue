@@ -1,14 +1,16 @@
-<template><div><h1 id="dom-节点的尺寸属性和位置属性" tabindex="-1"><a class="header-anchor" href="#dom-节点的尺寸属性和位置属性" aria-hidden="true">#</a> DOM 节点的尺寸属性和位置属性</h1>
-<h2 id="盒模型" tabindex="-1"><a class="header-anchor" href="#盒模型" aria-hidden="true">#</a> 盒模型</h2>
+<template><div><h1 id="dom-对象" tabindex="-1"><a class="header-anchor" href="#dom-对象" aria-hidden="true">#</a> DOM 对象</h1>
+<p>DOM 文档对象代表整个 html 文档</p>
+<h2 id="dom-节点的尺寸属性和位置属性" tabindex="-1"><a class="header-anchor" href="#dom-节点的尺寸属性和位置属性" aria-hidden="true">#</a> DOM 节点的尺寸属性和位置属性</h2>
+<h3 id="盒模型" tabindex="-1"><a class="header-anchor" href="#盒模型" aria-hidden="true">#</a> 盒模型</h3>
 <p>和模型是css 中的一个基本概念，将每个元素视为一个矩形盒子，盒子由 <font color=green>内容(content)</font>、 <font color=green>边框(border)</font>、<font color=green>内边距(padding)</font>、<font color=green>外边距(margin)</font> 四个部分组成</p>
-<h2 id="位置属性" tabindex="-1"><a class="header-anchor" href="#位置属性" aria-hidden="true">#</a> 位置属性</h2>
+<h3 id="位置属性" tabindex="-1"><a class="header-anchor" href="#位置属性" aria-hidden="true">#</a> 位置属性</h3>
 <ol>
 <li>
 <font color=green>offsetTop/offsetLet</font>: 表示DOM元素距离其父元素的偏移位置，如果没有定位父元素，则表示DOM元素距离body元素的距离</li>
 <li>
 <font color=green>scrollTop/scrollLeft</font>: 表示元素在垂直/水平方向上的滚动距离</li>
 </ol>
-<h2 id="尺寸属性" tabindex="-1"><a class="header-anchor" href="#尺寸属性" aria-hidden="true">#</a> 尺寸属性</h2>
+<h3 id="尺寸属性" tabindex="-1"><a class="header-anchor" href="#尺寸属性" aria-hidden="true">#</a> 尺寸属性</h3>
 <ol>
 <li>
 <font color=green>offsetHeight/offsetWidth</font>: 描述元素的总体尺寸，包括边框、内边距和滚动条</li>
@@ -19,7 +21,7 @@
 <li>
 <font color=green>innerHeight/innerWidth</font>: 元素内部的高度/宽度，包括滚动条，通常用于确定一个元素的可视高度/宽度, <font color=red>innerHeigh 属性用于非ie浏览器，在ie浏览器中使用 clientHeight/clientWidth 获取元素的内部高度/宽度</font></li>
 </ol>
-<h2 id="长列表渲染优化" tabindex="-1"><a class="header-anchor" href="#长列表渲染优化" aria-hidden="true">#</a> 长列表渲染优化</h2>
+<h3 id="长列表渲染优化" tabindex="-1"><a class="header-anchor" href="#长列表渲染优化" aria-hidden="true">#</a> 长列表渲染优化</h3>
 <ol>
 <li>
 <font color=green>虚拟化技术：</font> 在任何时候仅渲染可是区域内的元素，当用户滚动页面是，在视口之外的元素会被销毁，同时会创建视口内的元素。这样可以显著减少内存的使用和提高性能<ul>

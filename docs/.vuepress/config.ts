@@ -81,6 +81,10 @@ export default defineUserConfig({
                     {
                         text: 'BOM',
                         link: '/js/bom'
+                    },
+                    {
+                        text: '正则表达式',
+                        link: '/js/regexp',
                     }
                 ]
             },

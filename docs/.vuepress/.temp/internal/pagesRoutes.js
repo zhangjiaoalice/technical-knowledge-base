@@ -1,12 +1,11 @@
 export const pagesRoutes = [
   ["v-8daa1a0e","/",{"title":"目录"},["/README.md"]],
-  ["v-3fb43886","/js/bom.html",{"title":""},[":md"]],
-  ["v-0f769244","/js/dom.html",{"title":"DOM 节点的尺寸属性和位置属性"},[":md"]],
+  ["v-3fb43886","/js/bom.html",{"title":"BOM 对象"},[":md"]],
+  ["v-0f769244","/js/dom.html",{"title":"DOM 对象"},[":md"]],
   ["v-f10c81bc","/js/js-basic.html",{"title":"Javascript"},[":md"]],
   ["v-c1ef056e","/miniprogrammer/",{"title":"微信小程序"},["/miniprogrammer/index.md"]],
   ["v-0512feb8","/miniprogrammer/knowledge.html",{"title":""},[":md"]],
   ["v-45b0cc1c","/miniprogrammer/performance.html",{"title":"微信小程序性能优化"},[":md"]],
-  ["v-31b5e70c","/tools/lerna.html",{"title":"Lerna 简介"},[":md"]],
   ["v-da9dcb36","/network/band-widh.html",{"title":"网络传输速率和带宽"},[":md"]],
   ["v-51785086","/network/cdn.html",{"title":"CDN"},[":md"]],
   ["v-a9520d30","/network/communcation.html",{"title":"网络通信"},[":md"]],
@@ -22,6 +21,8 @@ export const pagesRoutes = [
   ["v-65c3202b","/network/web-rtc.html",{"title":"WebRTC"},[":md"]],
   ["v-51a3bcce","/network/webassembly.html",{"title":""},[":md"]],
   ["v-a08a9ca8","/network/websocket.html",{"title":"Websocket"},[":md"]],
+  ["v-31b5e70c","/tools/lerna.html",{"title":"Lerna 简介"},[":md"]],
   ["v-7d56b238","/uni-app/",{"title":"uni-app"},["/uni-app/index.md"]],
   ["v-3706649a","/404.html",{"title":""},[]],
+  ["v-2cc8f4e3","/js/regexp.html",{"title":"正则表达式"},[":md"]],
 ]
