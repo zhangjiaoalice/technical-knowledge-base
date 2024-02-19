@@ -68,6 +68,10 @@ js 中对象是一种复合数据类型，允许存储多个值为一个单独�
 
 2. 如何改变对象方法中 `this` 指向
     * 使用 call、apply、bind 方法
+        - 以函数的形式调用时，this永远指向window
+        - 以对象形式调用时，this指向调用的方法的对象
+        - 以构造函数形式调用时，this指向新创建的对象
+        - 使用call、apply、bind 调用时，this指向指定的target对象
     * `orginObj.call(targetObj, param1, param2...)` 使用call方法改变 orginObj对象的this指向，方法接收一个对象作为第一个参数，并将orginObj的this指向该对象（targetObj），参数作为其余参数传给方法
     * `orginObj.apply(targetObj, [param1, param2, param3...])`
     * `originObj.bind(targetObj)`: bind 方法会创建一个新的函数，当这个函数被调用的时候，this被设置为提供的值，无论它如何被调用
@@ -120,11 +124,140 @@ js 中对象是一种复合数据类型，允许存储多个值为一个单独�
     * ts 中，可以使用接口和类实现多台，通过定义接口和类，可以规定方法签名，并通过继承实现接口来模拟多态行为
 
 ### 继承
-*<font color=green>继承： 允许子类继承父类的属性和方法，js 中可以通过 `原型链来实现继承`，子类可以通过原型链访问父类的属性和方法</font>*
+*<font color=green>继承： 允许子类继承父类的属性和方法，js 中可以通过 `原型链来实现继承`，子类可以通过原型链访问父类的属性和方法，通过继承可以创建具有共享属性和方法的对象，从而减少冗余和提高代码质量</font>*
 
-1. 原型链继承
+1. 原型链继
+- **<font color=green>通过将子类的原型（prototype）对象设置为父类的一个实例对象，可以实现原型链继承</font>**
+- **<font color=red>优点：</font>** 子类可以通过原型链访问到父类原型链上的属性和方法
+- **<font color=red>缺点：</font>** 如果父类的属性是引用类型，那么所有子类实例都会共享这个属性，修改其中一个子类实例的属性会影响到其他的子类实例
+
+
+```javascript
+function Parent() {
+    this.name = 'Parent';
+    this.list = [1, 2, 3, 4];
+}
+
+function Child() {
+    this.type = 'child';
+}
+
+// 将子类 Child 的原型对象设置为 Parent 的实例
+Child.prototype = new Parent();
+
+const child1 = new Child();
+const child2 = new Child();
+console.log(child1.name); // 'Parent'
+console.log(child2.name); // 'Parent'
+child1.list.push(22);
+console.log(child1.list); // [1, 2, 3, 4, 11]
+```
+
 2. 借助构造函数继承
+- **<font color=green>通过在子类构造函数中调用父类构造函数来实现继承</font>**
+- **<font color=red>优点：</font>** 每个子类的实例都会继承一份父类的属性，子类的多个实例之间不会互相干扰
+- **<font color=red>缺点：</font>** 方法都是在构造函数中定义的，无法实现函数复用，每个实例都会有一份相同的方法，会造成内存浪费
+
+```javascript
+function Parent() {
+    this.name = 'Parent';
+    this.list = [1, 2, 3, 4];
+}
+
+function Child() {
+    // 将 当前的this指向 Child 的实例对象
+    Parent.call(this);
+    this.type = 'child'
+}
+
+const c1 = new Child();
+const c2 = new Child();
+console.log(c1.list === c2.list); // false,每个实例都会继承一份父类的属性，互不干扰
+```
+
 3. 组合继承
+- **<font color=green>组合继承结合了原型链继承和借用构造函数继承的优点，先通过借用构造函数继承父类的属性，然后再将父类的实例对象作为子类的原型对象，实现继承</font>**
+- **<font color=red>优点：</font>** 即保证了子类有自己的属性，又实现了方法的复用
+- **<font color=red>缺点：</font>** 调用了两次父类构造函数，生成了两份不你要的属性，造成内存浪费
+
+```javascript
+function Parent() {
+    this.name = 'Parent';
+    this.list = [1, 2, 3, 4];
+}
+
+function Child() {
+    Parent.call(this); // 第一次调用，继承父类属性
+    this.type = 'child';
+}
+
+// 第二次调用， 设置 Child 的原型对象为Parent的一个实例，从而继承 Parent 的实例方法
+Child.prototype = Object.create(Parent.Prototype);
+// 修正构造函数的子类原型对象的构造函数的指向
+Child.prototype.constructor = Child;
+const c1 = new Child();
+const c2 = new Child();
+
+console.log(c1.list === c2.list); // false
+```
+
 4. 原型式继承
+- **<font color=green>原型式继承是借助原型可以基于已有对象创建新对象，同时还不必因此创建自定义类型，这种方式通过`Object.create()` 实现</font>**
+- **<font color=green>缺点：</font>** 如果属性是引用类型，那么所有实例都会共享这个属性
+
+```javascript
+function createObject(obj) {
+    function F() {}
+    F.prototype = obj;
+    return new F();
+}
+
+const parent = {
+    name: 'Parent',
+    list: [1, 2, 3, 4];
+}
+
+const child = createObject(parent);
+```
+
 5. 寄生继承
+- **<font color=green>寄生式继承的思路和工厂模式类似，即创建一个仅用于封装继承过程的函数，该函数在内部以某种方式来增强对象，最后返回对抗</font>**
+- **<font color=red>缺点：</font>** 如果属性是引用类型，那么所有实例都会共享这个属性
+
+```javascript
+function createObject(obj) {
+    const clone = Object.create(obj)
+    clone.say = function() {
+        console.log('say hello');
+    }
+    return clone;
+}
+const parent = {
+    name: 'Parent',
+    list: [1, 2, 3, 4, 5]
+}
+const child = createObject(parent);
+child.say(); // 'say hello'
+```
+
 6. 寄生组合继承
+- **<font color=green>寄生组合继承是寄生继承的优化版本， 借用构造函数继承父类属性，然后将子类的原型设置为父类的一个浅拷贝（而不是父类的一个实例）</font>**
+- **<font color=red>优点：</font>** 这样既避免了组合继承中调用两次父类构造函数的问题，又保证了每个子类实例都有属于自己的属性和方法
+- **<font color=red>这是js中最常用的继承模式之一</font>**
+
+```javascript
+function inheritPrototype(child, parent) {
+    const prototype = Object.create(parent.prototype);
+    prototype.constructor = child;
+    child.prototype = prototype;
+}
+function Parent() {
+    this.name = 'Parent';
+    this.list = [1, 2, 3, 4];
+}
+function Child() {
+    Parent.call(this);
+    this.type = 'child';
+}
+inheritPrototype(Child, Parent);
+```
