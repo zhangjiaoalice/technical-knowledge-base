@@ -221,15 +221,19 @@ const child = createObject(parent);
 ```
 
 5. 寄生继承
-- **<font color=green>寄生式继承的思路和工厂模式类似，即创建一个仅用于封装继承过程的函数，该函数在内部以某种方式来增强对象，最后返回对抗</font>**
+- **<font color=green>寄生式继承的思路和工厂模式类似，基于原型链，即创建一个新对象，然后将新创建对象的原型指向需要继承的对象，然后增强对象，最后返回增强后的对象</font>**
 - **<font color=red>缺点：</font>** 如果属性是引用类型，那么所有实例都会共享这个属性
+- *寄生式继承的方式一般不会直接使用，而是作为其他继承的一部分（寄生组合继承）的一部分*
 
 ```javascript
 function createObject(obj) {
-    const clone = Object.create(obj)
+    // 创建一个新对象，然后将新对象的原型指向 需要继承的对象
+    const clone = Object.create(obj);
+    // 增强对象
     clone.say = function() {
         console.log('say hello');
     }
+    // 返回增强后的对象
     return clone;
 }
 const parent = {
@@ -247,8 +251,15 @@ child.say(); // 'say hello'
 
 ```javascript
 function inheritPrototype(child, parent) {
+    // 将子类的原型设置为父类的一个实例，从而继承父类的实例方法
     const prototype = Object.create(parent.prototype);
+    // 修正 子类构造函数的指向
     prototype.constructor = child;
+    // 在子类原型对象上添加新的属性或者方法
+    prototype.age = 12;
+    prototype.run = function() {
+        console.log('running...');
+    }
     child.prototype = prototype;
 }
 function Parent() {
@@ -256,6 +267,7 @@ function Parent() {
     this.list = [1, 2, 3, 4];
 }
 function Child() {
+    // 借用构造函数继承父类的属性
     Parent.call(this);
     this.type = 'child';
 }
